@@ -1,0 +1,65 @@
+
+
+GET http://localhost:8000/api/contratos
+
+#####
+
+GET http://localhost:8000/api/contratos/2
+
+####
+
+POST http://localhost:8000/api/contratos
+Content-Type: application/json
+
+{
+    "data-final": "21 05 20200",
+    "licitacao": "prefeitura de luziania goias",
+}
+
+####
+
+DELETE http://localhost:8000/api/contratos
+
+####
+
+PUT http://localhost:8000/api/contratos/2
+content-Type: application/json
+
+{
+    "data-final": "21 05 2021",
+    "licitacao": "prefeitura de luziania kkkk"
+}
+
+###########################################################
+
+GET http://localhost:8000/api/estoque
+
+#####
+
+GET http://localhost:8000/api/estoque/1
+
+
+####
+
+POST http://localhost:8000/api/estoque
+Content-Type: application/json
+
+{
+    "nome-pecas": "freio",
+    "data-validade": "20 05 2021",
+    "pecas": "parafuso"
+}
+
+#####
+DELETE http://localhost:8000/api/estoque/4
+
+####
+
+PUT http://localhost:8000/api/estoque/2
+content-Type: application/json
+
+{
+    "nome-pecas": "kit de freio",
+    "data-validade": "20 05 2030",
+    "pecas": "oleo"
+}
